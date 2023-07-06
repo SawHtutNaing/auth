@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('/ok', function () {
-    return "vps 4 projects"
+    return "vps 4 projects";
 });
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -31,4 +31,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
